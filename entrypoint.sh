@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INPUT_FOLEDER=$args[0]
+INPUT_FOLEDER=${args[0]}
 DIAGRAM_FILE_EXTENSION=".mmd"
 
 cd $INPUT_FOLEDER
