@@ -3,18 +3,12 @@ branding:
   icon: 'grid'
   color: 'green'
 inputs:
-  inFile:
-    description: 'the path to the input file to convert'
-    required: true
-  outFile:
-    description: 'where to output the file'
+  inFolder:
+    description: 'the path to the input folder with .mmd files to convert'
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - '-i'
-    - ${{ inputs.inFile }}
-    - '-o'
-    - ${{ inputs.outFile }}
+    ${{ inputs.inFolder }}
 

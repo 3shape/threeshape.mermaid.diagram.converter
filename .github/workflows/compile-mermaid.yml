@@ -12,11 +12,10 @@ jobs:
 
     - uses: 3shape/threeshape.mermaid.diagram.converter@master
       with:
-        inFile: './test-data/diag.mmd'
-        outFile: './test-data/diag.svg'
+        inFolder: './test-data/'
     
     - uses: actions/upload-artifact@v1
       with:
         name: output
-        path: ./test-data/diag.svg
+        path: ./test-data
   

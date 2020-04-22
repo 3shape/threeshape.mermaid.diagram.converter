@@ -6,5 +6,7 @@ RUN apt-get update && \
 
 ADD puppeteer-config.json  .
 
-ENTRYPOINT ["/usr/local/bin/mmdc", "-p", "puppeteer-config.json"]
-CMD [ "--help" ]
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh 
+
+ENTRYPOINT ["/entrypoint.sh"]
