@@ -4,11 +4,11 @@ branding:
   color: 'green'
 inputs:
   inFolder:
-    description: 'the path to the input folder with .mmd files to convert'
+    description: 'The path to the input folder with .mmd files to convert'
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    ${{ inputs.inFolder }}
+    - ${{ inputs.inFolder }}
 
