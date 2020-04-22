@@ -18,7 +18,7 @@ jobs:
         inFile: './test-data/diag.mmd'
         outFile: './test-data/diag.svg'
     - uses: actions/upload-artifact@v1
-        with:
-          name: output
-          path: ./test-data/diag.svg
-   
+      with:
+        name: output
+        path: ./test-data/diag.svg
+  
