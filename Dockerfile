@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/mindaugaslaganeckas/mermaid.cli/mermaid.cli:latest
+FROM minlag/mermaid.cli:latest
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh 
