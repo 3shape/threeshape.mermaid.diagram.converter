@@ -10,7 +10,7 @@ jobs:
       with:
         fetch-depth: 2
 
-    - uses: 3shape/threeshape.mermaid.diagram.converter@master
+    - uses: 3shape/threeshape.mermaid.diagram.converter@features/mermaid-docker
       with:
         inFolder: './test-data/'
     
